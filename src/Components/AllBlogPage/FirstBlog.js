@@ -9,10 +9,12 @@ function FirstBlog() {
             <div className='Blog'>
                 <div className='B-Left'>
                     <p>Featured Post</p>
-                    <h1>Step-by-step guides to choosing great font pairs</h1>
+                    <h1 className = "fff">Step-by-step guides to choosing great font pairs</h1>
                     <p>By <span className = "spt">Jon Doe</span> | may 23 2022</p>
-                    <p>orem Ipsum is simply dummy text of the printing and typesetting industry.
+                    <p className = 'pfff'>orem Ipsum is simply dummy text of the printing and typesetting industry.
                          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+
+                         <br/>  <br/>
                     <button>Read more</button>
                 </div>
                 <div className='B-Right'>

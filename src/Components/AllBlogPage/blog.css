@@ -7,6 +7,12 @@
     gap: 280px; /* Large gap for desktop */
     flex-wrap: wrap; /* Allow items to wrap on smaller screens */
 }
+.Blog .fff{
+    margin-top: 10px;
+}
+.Blog .pfff{
+    margin-top: 19px;
+}
 
 .spt {
     color: #592EA9;
