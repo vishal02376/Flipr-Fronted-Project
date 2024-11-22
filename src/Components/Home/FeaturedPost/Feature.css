@@ -1,0 +1,72 @@
+.Feature {
+    display: flex;
+    justify-content: space-between; /* Space out the left and right sections */
+    max-width: 97%;
+    gap: 30px;
+    padding-left: 5%;  /* Adds 5% space on the left */
+    padding-right: 5%; /* Adds 5% space on the right */
+}
+
+.Feature img {
+    margin-top: 15px;
+    max-width: 100%; /* Ensures the image stays inside its container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.Feature .lefts {
+    max-width: 100%;
+    border: 1px solid black;
+    padding-left: 15px;  /* Adds 10px space on the left side */
+    padding-right: 15px; /* Adds 10px space on the right side */
+    box-sizing: border-box; /* Ensure padding doesn't overflow the border */
+}
+
+
+
+.Feature button {
+    width: 120px;
+    height: 30px;
+    border: none;
+    background-color: #FFD050;
+    margin-bottom: 15px;
+}
+
+.read-more-btn i {
+    margin-left: 5px;
+}
+
+.AllPost:hover {
+    background-color: #FBF6EA;
+    cursor: pointer;
+}
+
+.aug {
+    color: #592EA9;
+}
+.bul{
+    margin-bottom: 9px;
+}
+.buls{
+    margin-top: 13px;
+}
+
+@media (max-width: 1000px) {
+    .Feature {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .Left, .Right {
+        width: 100%;
+    }
+    
+    .Lefts {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .Feature img {
+        width: 100%; /* Ensure the image adapts to the width of its container */
+        height: auto; /* Maintain aspect ratio */
+    }
+}

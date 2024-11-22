@@ -1,0 +1,33 @@
+.A-par {
+    width: 87%;
+    margin: 0 auto; /* Center the parent container */
+    display: flex; /* Enables flexbox for layout */
+    gap: 5%; /* Adds space between A-Left and A-Right */
+   
+    padding: 10px; /* Optional padding */
+    margin-top: 90px;
+}
+
+.A-Left {
+    width: 58%; /* 40% of the parent's width */
+    background-color: white;/* Optional background color for visibility */
+    padding: 10px; /* Optional padding */
+    height: 268px;
+    position: relative;
+    top: 44px;
+}
+
+.A-Right {
+    width: 50%; /* 50% of the parent's width */
+  
+    padding: 10px; /* Optional padding */
+    position: relative;
+    top: 44px;
+}
+.A-Left h1{
+    font-size: 40px;
+}
+
+p, h1 {
+    margin: 0; /* Remove default margins for better alignment */
+}

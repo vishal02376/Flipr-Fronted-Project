@@ -1,0 +1,49 @@
+/* Join container */
+.Join {
+    display: flex;
+    justify-content: center;  /* Horizontally center */
+    align-items: center;      /* Vertically center */
+    padding: 0 20px;           /* Optional padding */
+}
+
+/* Header container */
+.Jhead {
+    text-align: center;       /* Center text inside the Jhead */
+    max-width: 600px;          /* Limit the max width of the content */
+    padding: 20px;             /* Add some padding around the content */
+    background-color: #fff;    /* Optional background for the content */
+    border-radius: 8px;        /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
+
+/* Heading styling */
+.Jhead h2 {
+    font-size: 2rem;           /* Larger font for the heading */
+    font-weight: bold;         /* Bold font */
+    color: #333;               /* Dark color for contrast */
+    margin-bottom: 10px;       /* Space between heading and paragraph */
+}
+
+/* Paragraph styling */
+.Jhead p {
+    font-size: 1rem;           /* Set font size for the paragraph */
+    color: #666;               /* Light gray color for the paragraph */
+    margin-bottom: 20px;       /* Space between paragraph and button */
+}
+
+/* Button styling */
+.Jhead button {
+    background-color: #FFD050; 
+    color: black;              
+    padding: 12px 20px;        
+    font-size: 1rem;           
+    border: none;              
+    border-radius: 5px;        
+    cursor: pointer;          
+    transition: background-color 0.3s ease; 
+}
+
+/* Button hover effect */
+.Jhead button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}

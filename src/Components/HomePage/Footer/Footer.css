@@ -1,0 +1,190 @@
+/* Main container for the footer */
+.MainFooter {
+    background-color: #222; /* Dark background color */
+    color: #fff; /* White text color */
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    margin-top: 30px;
+}
+
+/* Footer content */
+.Footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #444;
+}
+
+/* Left section with the logo */
+.Left .Logo img {
+    width: 120px; /* Adjust logo size */
+    height: auto;
+}
+
+/* Right section with the navigation links */
+.Right ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.Right ul li {
+    cursor: pointer;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.Right ul li:hover {
+    color: #00bcd4; /* Highlight color on hover */
+}
+
+/* Subscription section */
+.Subs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px 0;
+  
+    color: #fff;
+ 
+    background-color: #4C4C4C;
+}
+
+.LeftSubs h3 {
+    font-size: 18px;
+    line-height: 1.5;
+    padding-left: 30px;
+}
+
+.RightSubs {
+    display: flex;
+    gap: 10px;
+    padding-right: 30px;
+}
+
+.RightSubs input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #FBF6EA;
+    border-radius: 5px;
+    width: 250px;
+    background-color: #4C4C4C;
+}
+
+.RightSubs input:focus {
+    outline: none;
+    border-color: #00bcd4;
+}
+
+.RightSubs button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: black;
+    background-color: #FFD050;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.RightSubs button:hover {
+    background-color: gold; /* Darker shade on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .Footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Right ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .Subs {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .LeftSubs h3 {
+        margin-bottom: 20px;
+    }
+
+    .RightSubs input {
+        width: 100%;
+    }
+}
+
+
+/* Social media section */
+.Social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px 0;
+    color: white;
+}
+
+/* Left side text */
+.Social .cleft {
+    flex: 1;
+    font-size: 16px;
+    line-height: 1.5;
+    padding-right: 20px;
+}
+
+/* Right side icons */
+.Social .cright {
+    display: flex;
+    gap: 15px; /* Space between icons */
+}
+
+.Social .cright a {
+    display: inline-block;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.Social .cright a:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+    opacity: 0.8; /* Slight fade effect */
+}
+
+.Social .social-icon {
+    width: 15px; /* Icon size */
+    height: 15px;
+    object-fit: contain;
+    filter: grayscale(100%); /* Default grayscale effect */
+    transition: filter 0.3s ease, transform 0.3s ease;
+
+    background: white;
+}
+
+.Social .social-icon:hover {
+    filter: grayscale(0%); /* Remove grayscale on hover */
+    transform: scale(1.2); /* Enlarge icon slightly */
+}
+
+/* Responsive design for social section */
+@media (max-width: 768px) {
+    .Social {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .Social .cleft {
+        margin-bottom: 10px;
+    }
+
+    .Social .cright {
+        justify-content: center;
+    }
+}

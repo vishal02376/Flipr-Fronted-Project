@@ -1,0 +1,41 @@
+.container {
+    max-width: 95%;
+    margin: 0 auto; /* Centers the container horizontally */
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 18px;
+    padding-left: 15px;
+}
+
+.box-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allows the boxes to wrap if there's not enough space */
+    gap: 10px; /* Space between boxes */
+}
+
+.box {
+   
+    width: 251px;
+   
+    border: 1px solid #ccc; /* Adds a border for visibility */
+}
+.box:hover{
+    background-color: #FFD050;
+    cursor: pointer;
+}
+.box img{
+    padding-left: 15px;
+    margin-top: 15px;
+}
+.box h3{
+    padding-left: 15px;
+}
+.box p{
+    padding-left: 15px;
+}

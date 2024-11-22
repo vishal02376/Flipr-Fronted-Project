@@ -1,0 +1,115 @@
+/* Container for the boxes */
+.containerss {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    max-width: 95%;
+}
+
+/* Heading center styling */
+.cen {
+    margin-top: 60px;
+}
+
+/* Individual Box Styles */
+.boxx {
+    width: 22%;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect to lift the box */
+.boxx:hover {
+    transform: translateY(-10px);
+    background-color: #FBF6EA;
+}
+
+/* Image inside each box */
+.box-image {
+    height: 24px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Name and paragraph styling */
+.box-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.box-paragraph {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icon {
+    width: 15px;
+    height: 15px;
+    transition: opacity 0.3s ease;
+}
+
+.social-icon:hover {
+    opacity: 0.7;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For mobile screens (max-width 600px) */
+@media (max-width: 600px) {
+    .containerss {
+        justify-content: center;
+        gap: 15px;
+    }
+    .boxx {
+        width: 100%;
+        margin-bottom: 20px; /* space between boxes */
+    }
+    .box-name {
+        font-size: 1.1rem;
+    }
+    .box-paragraph {
+        font-size: 0.9rem;
+    }
+}
+
+/* For tablet screens (min-width 601px and max-width 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+    .boxx {
+        width: 48%; /* two boxes per row */
+    }
+    .box-name {
+        font-size: 1.1rem;
+    }
+    .box-paragraph {
+        font-size: 0.95rem;
+    }
+}
+
+/* For larger screens (min-width 901px) */
+@media (min-width: 901px) {
+    .boxx {
+        width: 22%; /* four boxes per row */
+    }
+    .box-name {
+        font-size: 1.2rem;
+    }
+    .box-paragraph {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,194 @@
+
+.Nave {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000; /* Ensure navbar stays above other elements */
+    position: fixed;
+    width: 100%;
+    color: white;
+    top: 0;
+    left: 0;
+    background-color: #232536;
+}
+
+.Right ul li a {
+    color: white; /* Set text color to white */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  .Right ul li a:hover{
+    color: #00bcd4;
+  }
+  .Top ul li a{
+    text-decoration: none;
+  }
+.logo {
+    color: white;
+    font-weight: 800;
+    margin: 0;
+}
+
+.Left .Logo img {
+   height: 30px;
+   position: relative;
+   left: 83px;}
+
+.Left .Logo {
+    align-items: center;
+    display: flex;
+}
+
+.Nave .Left {
+    display: flex;
+    gap: 26px;
+    align-items: center;
+}
+
+.Nave .Right {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.Nave .Right ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.Tools {
+    display: flex;
+    gap: 30px;
+}
+
+.sub{
+    background-color:#F4F0F8;
+    height: 40px;
+    width: 90px;
+    color: #4C4C4C;
+    align-items: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.Dot {
+    cursor: pointer;
+    display: none;
+    font-size: 30px;
+    padding-right: 20px;
+    color: white;
+    position: relative;
+  left: -20px;
+}
+
+/* Responsive Full-Screen Overlay Menu */
+.Reponsive {
+    display: none;
+}
+
+.Active {
+    display: none;
+}
+
+@media (max-width: 850px) {
+    .Nave .Right {
+        display: none;
+    }
+    .Left .Logo img {
+        height: 30px;
+        position: relative;
+        left: 10px;}
+
+    .Nave .Left .Logo h1 {
+        padding-left: 20px;
+        color: white;
+    }
+
+    .Nave {
+        justify-content: space-between;
+        height: 64px;
+    }
+
+    .Nave .Left h1 {
+        display: none;
+    }
+
+    .Dot {
+        display: block;
+    }
+}
+
+/* Responsive Dropdown Menu */
+.Reponsive {
+    display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+  background-color: white;
+  color: black;
+  z-index: 1000;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  margin-top: 65px;
+}
+
+
+.Reponsive .Box1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.Reponsive .Box1 .Top ul {
+    list-style: none;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.Reponsive .Box1 .Top ul li {
+    margin: 15px 0;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.Reponsive .Bottom {
+    margin-top: 30px;
+    width: 100%;
+}
+
+.Reponsive .Bottom ul {
+    display: flex;
+    justify-content: space-between; 
+    list-style: none;
+}
+
+.Back, .Backs {
+    height: 30px;
+    width: 70px;
+    color: white;
+    display: flex;     
+    align-items: center;  
+    justify-content: center;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+.Back {
+    background-color: blue;
+}
+
+.Backs {
+    background-color: #ff0000;
+}

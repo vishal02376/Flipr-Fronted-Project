@@ -1,0 +1,52 @@
+.About {
+    display: flex;
+    justify-content: space-around; 
+    max-width: 95%; 
+    margin: 0 auto; 
+    gap: 20px; 
+    padding: 20px 0; 
+    background-color: #F4F0F8;
+}
+
+hr {
+    margin-top: 20px; 
+    height: 15px;
+    border: none;
+    width: 70%; 
+    background: linear-gradient(to left, #592EA9 30%, #FFD050 0%); /* Blue on the right 30%, yellow on the remaining 70% */
+    margin-bottom: 20px; /* Space between hr and content */
+    position: relative;
+    margin-bottom: 1px;
+}
+
+.Leftt, .Rightt {
+    width: 48%; /* Adjust width of left and right sections */
+}
+
+.Leftt h2, .Rightt h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333; /* Optional: Change text color */
+}
+
+.Leftt p, .Rightt p {
+    font-size: 16px;
+    color: #555; /* Optional: Change paragraph text color */
+    line-height: 1.5; /* For better readability */
+}
+
+@media (max-width: 768px) {
+    .About {
+        flex-direction: column; /* Stacks the sections on smaller screens */
+        align-items: center; /* Centers both sections */
+    }
+
+    .Leftt, .Rightt {
+        width: 100%; /* Make the sections take full width on smaller screens */
+        margin-bottom: 20px; /* Adds space between sections */
+    }
+
+    .Leftt:last-child, .Rightt:last-child {
+        margin-bottom: 0; /* Removes margin for the last section */
+    }
+}

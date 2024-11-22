@@ -1,0 +1,52 @@
+.Ts-para {
+    width: 87%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+   
+    padding: 10px;
+    height: auto;
+    margin-top: 50px;
+    gap: 50px;
+}
+
+.Ts-left, .Ts-right {
+    width: 48%;
+    height: auto;
+}
+
+.Ts-right img {
+    height: 300px;
+    width: 100%; /* Ensure responsiveness */
+    object-fit: contain; /* Maintain aspect ratio */
+}
+
+/* Tablet and Mobile */
+@media (max-width: 768px) {
+    .Ts-para {
+        flex-direction: column;
+        padding: 20px;
+        height: auto;
+    }
+
+    .Ts-left, .Ts-right {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .Ts-right img {
+        max-height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Ts-para {
+        padding: 15px;
+    }
+
+    .Ts-left b, .Ts-left p {
+        font-size: 0.9rem;
+    }
+}
